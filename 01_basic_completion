@@ -2,14 +2,14 @@
 pip install openai
 
 In windows set env variable
-set OPEN_AI_KEY=<set-your-own-token>
+set OPEN_API_KEY=<set-your-own-token>
 echo %OPEN_AI_KEY%
 """
 
 import openai
 import os
 
-openai.api_key = os.getenv("OPEN_AI_KEY")
+openai.api_key = os.getenv("OPEN_API_KEY")
 model_name = "gpt-3.5-turbo"
 
 promt = "List top 5 City names in India"
